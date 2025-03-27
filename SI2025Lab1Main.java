@@ -64,16 +64,7 @@ class TaskManager {
 
     // 1. Remove a task by name
     public void removeTask(String name) {
-        Iterator<Task> iterator = tasks.iterator();
-        while (iterator.hasNext()) {
-            Task task = iterator.next();
-            if (task.getName().equals(name)) {
-                iterator.remove();
-                System.out.println("Task \"" + name + "\" removed :-)");
-                return;
-            }
-        }
-        System.out.println("Task with name \"" + name + "\" has not been found :-(");
+
     }
 
     // 2. Find all completed tasks
@@ -84,7 +75,12 @@ class TaskManager {
 
     // 3. List tasks sorted by name
     public void sortTasksByName() {
-        tasks.sort(Comparator.comparing(Task::getName));  // Sortiraj tasks po ime
+        Collections.sort(tasks, new Comparator<Task>() {
+            @Override
+            public int compare(Task t1, Task t2) {
+                return t1.getName().compareTo(t2.getName());  // Sortiraj tasks po ime
+            }
+        });
     }
     // 4. Sort tasks by priority
     public void sortTasksByPriority() {
