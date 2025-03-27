@@ -6,8 +6,8 @@ git add SI2025Lab1Main.java
 git commit -m "[INSERT COMMIT PORAKA]"
 17. git pull origin [issue]
 18.odam vo github i pravam pull request za branch-ot koj sto pushnav "Compare & pull request"
-20.Merge pravam isto preku github sajtot
-22.
+20.Merge pravam isto preku github sajtot, imav problem so merge na 3-list-tasks-sorted-by-name, izgleda sum imal nekakov konflikt vo kodot, ama go razreshiv! Za nekoja pricina mi pravese problem so prvata funkcija/TODO, ne sum siguren zasto e pricinata za toa, ama so pomos na intellij i koristenje na markings od github (<<<<<<<<HEAD, ======== i >>>>>>>), mozev da go razresam toj konflikt, za zal ne na nacinot sto jas preferirav, samo go vrativ kodot na prviot TODO kako sto e vo prviot branch i proraboti, nejkese da mi dade merge i uporno imase konflikt so toa ako go izvadev kodot. Osven za toa, jas nemav drug problem i gi merge-nav grankite 1-remove-a-task-by-name i 5-filter-tasks-by-category bez nikakov problem
+22.Gi koristev slednite komandi:
 git checkout master
 git merge 3-list-tasks-sorted-by-name
 23.za sinhronizacija:
