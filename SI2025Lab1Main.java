@@ -93,7 +93,7 @@ class TaskManager {
 
     // 5. Filter tasks by category
     public List<Task> filterByCategory(String category) {
-        
+
     }
 
     // 6. Find the highest-priority unfinished task
