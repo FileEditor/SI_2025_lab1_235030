@@ -85,8 +85,17 @@ class TaskManager {
 
     // 5. Filter tasks by category
     public List<Task> filterByCategory(String category) {
-        // TODO: Implement filtering logic
-        return new ArrayList<>();
+        List<Task> filteredTasks = new ArrayList<>();  // Create a new list to store the filtered tasks
+
+        // Loop through the tasks and check if the category matches
+        for (Task task : tasks) {
+            if (task.getCategory().equalsIgnoreCase(category)) {
+                filteredTasks.add(task);  // Add task to the list if category matches
+            }
+        }
+
+        // Return the filtered list of tasks
+        return filteredTasks;
     }
 
     // 6. Find the highest-priority unfinished task
