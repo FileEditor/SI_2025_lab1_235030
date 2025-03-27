@@ -1,0 +1,23 @@
+*   cba327c Merge branch 'master' of https://github.com/FileEditor/SI_2025_lab1_235030
+|\  
+| *   07f9387 Merge pull request #12 from FileEditor/5-filter-tasks-by-category
+| |\  
+| | * 87337b4 Updated SI2025Lab1Main.java
+| | * 464deaf Dodadeno funkcija da se filtriraat tasks spored kategorija
+| * |   94291ae Merge pull request #10 from FileEditor/1-remove-a-task-by-name
+| |\ \  
+| | |/  
+| |/|   
+| | * 1d0982e Implementirano funkcijata Remove a task by name
+| |/  
+* | 8a6c5fe Gluposti, ignore
+| | * b193371 Popraveni gluposti
+| |/  
+|/|   
+* | fad4d25 Gluposti, ignore pls :-)
+* | 3e90780 Soritiranje tasks po ime (fix)
+* | d5a9dc2 Implementirano sortiranje tasks po ime
+* | d1debc3 Implementirano sortiranje tasks po ime
+|/  
+* ccad946 Add starter code
+* d35015f Initial commit
