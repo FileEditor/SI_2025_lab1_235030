@@ -64,7 +64,20 @@ class TaskManager {
 
     // 1. Remove a task by name
     public void removeTask(String name) {
-        // TODO: Implement removal logic
+        public void removeTask(String name) {
+            Iterator<Task> iterator = tasks.iterator();
+            while (iterator.hasNext()) {
+                Task task = iterator.next();
+                if (task.getName().equals(name)) {
+                    iterator.remove();
+                    //ako e uspesno pronajden toj task, pecati slednoto:
+                    System.out.println("Task \"" + name + "\" has been removed. :-)");
+                    return;
+                }
+            }
+            //Pecati ako ne e najden toj task:
+            System.out.println("Task with the name \"" + name + "\" has not been found. :-(");
+        }
     }
 
     // 2. Find all completed tasks
@@ -85,8 +98,14 @@ class TaskManager {
 
     // 5. Filter tasks by category
     public List<Task> filterByCategory(String category) {
-        // TODO: Implement filtering logic
-        return new ArrayList<>();
+        List<Task> filteredTasks = new ArrayList<>();  
+        for (Task task : tasks) {
+            if (task.getCategory().equalsIgnoreCase(category)) {
+                filteredTasks.add(task);  
+            }
+        }
+        
+        return filteredTasks;
     }
 
     // 6. Find the highest-priority unfinished task
