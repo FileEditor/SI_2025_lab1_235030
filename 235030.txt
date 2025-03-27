@@ -16,3 +16,9 @@ git push origin master
 git log --oneline --graph --all > logs.txt
 Dodavam logs.txt i dokumentacijata 235030.txt so "git add logs.txt INDEX.txt" i samo pravam git commit -m "[poraka]"
 26.Sinhronizacija pravam so git push origin master :-)
+28.kloniranje pravam so
+git clone https://github.com/FileEditor/SI_2025_lab1_151020.git
+29.Se prenasocuvam kon kloniraniot repo so "cd SI_2025_LAB1_151020" i dodavam mojot fajl 235030.txt so komandata:
+echo "Dragan" > 235030.txt
+go dodavam 235030.txt so git add 235030.txt i pravam commit
+30.Sinhronizacija pravam so git pull origin master
