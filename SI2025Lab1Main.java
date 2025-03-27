@@ -64,8 +64,7 @@ class TaskManager {
 
     // 1. Remove a task by name
     public void removeTask(String name) {
-
-      
+        // TODO: Implement removal logic
     }
 
     // 2. Find all completed tasks
@@ -79,7 +78,7 @@ class TaskManager {
         Collections.sort(tasks, new Comparator<Task>() {
             @Override
             public int compare(Task t1, Task t2) {
-                return t1.getName().compareTo(t2.getName());  // Sortiraj tasks po ime
+                return t1.getName().compareTo(t2.getName());  // Sort tasks by name
             }
         });
     }
