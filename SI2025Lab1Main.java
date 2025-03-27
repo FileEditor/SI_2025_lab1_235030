@@ -85,16 +85,13 @@ class TaskManager {
 
     // 5. Filter tasks by category
     public List<Task> filterByCategory(String category) {
-        List<Task> filteredTasks = new ArrayList<>();  // Create a new list to store the filtered tasks
-
-        // Loop through the tasks and check if the category matches
+        List<Task> filteredTasks = new ArrayList<>();  
         for (Task task : tasks) {
             if (task.getCategory().equalsIgnoreCase(category)) {
-                filteredTasks.add(task);  // Add task to the list if category matches
+                filteredTasks.add(task);  
             }
         }
-
-        // Return the filtered list of tasks
+        
         return filteredTasks;
     }
 
