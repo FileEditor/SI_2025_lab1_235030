@@ -88,9 +88,13 @@ class TaskManager {
 
     // 3. List tasks sorted by name
     public void sortTasksByName() {
-        // TODO: Implement sorting logic
+        Collections.sort(tasks, new Comparator<Task>() {
+            @Override
+            public int compare(Task t1, Task t2) {
+                return t1.getName().compareTo(t2.getName());  // Sort tasks by name
+            }
+        });
     }
-
     // 4. Sort tasks by priority
     public void sortTasksByPriority() {
         // TODO: Implement sorting by priority logic
@@ -98,14 +102,7 @@ class TaskManager {
 
     // 5. Filter tasks by category
     public List<Task> filterByCategory(String category) {
-        List<Task> filteredTasks = new ArrayList<>();  
-        for (Task task : tasks) {
-            if (task.getCategory().equalsIgnoreCase(category)) {
-                filteredTasks.add(task);  
-            }
-        }
-        
-        return filteredTasks;
+
     }
 
     // 6. Find the highest-priority unfinished task
